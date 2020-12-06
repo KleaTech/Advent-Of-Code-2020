@@ -7,8 +7,10 @@ The whole project is written on Repl.it:
 https://repl.it/@KleaTech/Advent-of-Code-2020
 
 To try out my code, use:
+```
 javac Decxx_x.java
 java Decxx_x
+```
 
 You can use these commands directly in Repl.it
 In some cases modifications to these commands are needed.
