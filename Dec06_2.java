@@ -9,7 +9,8 @@ class Dec06_2 {
     var sum = Arrays.stream(Files.readString(Paths.get("Dec06_1_input.txt")).split("\\n\\n|\\r\\n\\r\\n")).mapToLong(group -> 
         group.lines()
              .map(Dec06_2::stringToCharSet)
-             .reduce(stringToCharSet("abcdefghijklmnopqrstuvwxyz"), (acc, line) -> { acc.retainAll(line); return acc; }).size())
+             .reduce(stringToCharSet("abcdefghijklmnopqrstuvwxyz"), (acc, line) -> { acc.retainAll(line); return acc; })
+             .size())
       .sum();
     System.out.println(sum);
   }
